@@ -1,0 +1,77 @@
+.infoUser {
+    margin-top: 145px;
+    padding-bottom: 180px;
+    &__hello {
+        padding: 6px 0px 6px 0px;
+        text-align: center;
+        border-radius: 20px 20px 20px 0px;
+        opacity: 0.8;
+        background: #0BCEAF;
+        color: #FFF;
+        letter-spacing: 1px;
+        font-size: 14px;
+        max-width: 123px;
+        box-sizing: border-box;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__border {
+    }
+    &__img {
+        max-width: 360px;
+        max-height: 360px;
+        border: 20px solid rgba(0, 0, 0, 0.07);
+        border-radius: 209px;
+    }
+}
+.info {
+    &__header {
+        color: #000;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 65px;
+        opacity: 0.8;
+        margin: 24px 0 10px 0;
+    }
+    &__position {
+        opacity: 0.8;
+        margin: 0;
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    &__contacts {
+        margin-top: 30px;
+
+    }
+}
+.contact {
+    margin-top: 10px;
+    &__icon {
+        svg {
+            width: 17px;
+            height: 14px;
+        }
+    }
+    &__text {
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-left: 15px;
+        text-decoration: none;
+    }
+}
+.social {
+    margin-top: 30px;
+    &__icon:first-child {
+        margin-left: 0;
+    }
+    &__icon {
+        margin-left: 28px;
+    }
+}
