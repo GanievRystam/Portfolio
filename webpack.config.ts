@@ -23,12 +23,30 @@ const config: webpack.Configuration = {
         }
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.svg$/,
         use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader",
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10240,
+              iesafe: true,
+            },
+          },
         ],
+      },
+      {
+        test: /\.(css|sass|scss)$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ]
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
