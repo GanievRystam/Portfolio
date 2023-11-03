@@ -75,3 +75,11 @@
         margin-left: 28px;
     }
 }
+@media (max-width: 700px) {
+    .infoUser {
+        &__container {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+}

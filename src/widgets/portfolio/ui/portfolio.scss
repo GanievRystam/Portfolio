@@ -39,8 +39,9 @@
     flex-wrap: wrap;
     &__work {
         display: flex;
-        flex-direction: column;
         gap: 25px;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     &__img {
         cursor: pointer;

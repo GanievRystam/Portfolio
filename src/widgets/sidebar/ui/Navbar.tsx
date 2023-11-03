@@ -9,9 +9,6 @@ export function Navbar () {
             </div>
             <ul className="navbar__items">
                 <li className="navbar-item">
-                    <NavLink selector="navbar-item__link navbar-item__link--active" href="#home" text="Home"/>
-                </li>
-                <li className="navbar-item">
                     <NavLink selector="navbar-item__link" href="#about" text="About"/>
                 </li>
                 <li className="navbar-item">
@@ -24,7 +21,7 @@ export function Navbar () {
                     <NavLink selector="navbar-item__link" href="#portfolio" text="Portfolia"/>
                 </li>
                 <li className="navbar-item">
-                    <NavLink selector="navbar-item__link" href="#contact" text="Contact"/>
+                    <NavLink selector="navbar-item__link" href="#footer" text="Contact"/>
                 </li>
             </ul>
         </nav>

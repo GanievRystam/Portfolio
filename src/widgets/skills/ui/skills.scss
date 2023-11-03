@@ -19,3 +19,17 @@
 .section-skills {
     margin-bottom: 100px;
 }
+
+@media (max-width: 750px) {
+    .skills {
+        &-wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__prof{
+            &--wrap {
+                justify-content: center;
+            }
+    }
+}
+}

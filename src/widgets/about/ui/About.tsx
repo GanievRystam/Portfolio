@@ -3,7 +3,7 @@ import AboutImg from 'shared/assets/about.png';
 import './about.scss'
 export default function About () {
     return(
-        <section className="about">
+        <section className="about" id="about">
             <div className="container">
                 <div className="about-wrapper">
                     <img className="about__img" src={AboutImg} alt="about" />
@@ -17,7 +17,6 @@ export default function About () {
                             <span className="skills__skill">React</span>
                             <span className="skills__skill">Javascript</span>
                         </div>
-                        <button className="about-me__btn">Download CV</button>
                     </div>
                 </div>
             </div>

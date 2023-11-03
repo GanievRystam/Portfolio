@@ -26,6 +26,7 @@
     &__items {
         display: flex;
         justify-content: space-between;
+        gap: 20px;
     }
     &__item{
         width: 100%;
@@ -43,5 +44,26 @@
         line-height: 34px;
         margin-bottom: 19px;
         margin-top: 0;
+    }
+}
+@media (max-width: 843px) {
+    .what{
+        &__item  {
+            text-align: center;
+        }
+        &__head {
+            font-size: 22px;
+        }
+            
+    }
+}
+@media (max-width: 680px) {
+    .what{
+        &__items  {
+            flex-direction: column;
+        }   
+        &__item  {
+            max-width: fit-content;
+        }
     }
 }

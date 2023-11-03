@@ -4,7 +4,7 @@ import './skills.scss'
 import ProfSkill from "shared/ui/profSkill/ProfSkill";
 export default function Skills () {
     return(
-        <section className="section-skills">
+        <section className="section-skills" id="skills">
             <div className="container">
                 <div className="skills-wrap">
                     <div className="skills__tech skills__wrap">
