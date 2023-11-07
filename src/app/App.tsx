@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Header } from "widgets/sidebar/header/ui/Header";
 import './app.scss'
 import { About } from "widgets/about";
@@ -11,14 +11,16 @@ import { Footer } from "widgets/footer";
 const App = () => {
     return (
         <>
-            <Header/>
-            <About/>
-            <WhatIDo/>
-            <Featured/>
-            <Skills/>
-            <Experience/>
-            <Portfolio/>
-            <Footer/>
+            <Suspense fallback='loading'>
+                    <Header/>
+                    <About/>
+                    <WhatIDo/>
+                    <Featured/>
+                    <Skills/>
+                    <Experience/>
+                    <Portfolio/>
+                    <Footer/>
+            </Suspense>
         </>
     );
 }

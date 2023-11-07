@@ -32,8 +32,8 @@ export default function Portfolio () {
                 </nav>
                 <div className="portfolio">
                     <div className="portfolio__work">
-                    {allWorks[category].map( (work:any)=> {
-                            return <a href={work.href}> <img className="portfolio__img" src={work.src} alt="" /></a>
+                    {allWorks[category].map( (work:any, index: number)=> {
+                            return <a key={index} href={work.href}> <img className="portfolio__img" src={work.src} alt="" /></a>
                         })}
                     </div>
                 </div>

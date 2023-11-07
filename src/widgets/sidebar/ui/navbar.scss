@@ -58,7 +58,11 @@
         text-transform: uppercase;
     }
 }
-
+.btn-switchLng {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgba(#000000, .4);
+}
 @media (max-width: 585px) {
     .navbar {
         flex-direction: column;
