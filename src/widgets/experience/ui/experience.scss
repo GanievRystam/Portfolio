@@ -60,3 +60,10 @@
         }
     }
 }
+@media (max-width: 640px) {
+    .experience {
+        &__item{
+            width: 90%;
+        }
+    }
+}

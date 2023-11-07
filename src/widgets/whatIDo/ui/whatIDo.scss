@@ -59,6 +59,7 @@
 }
 @media (max-width: 680px) {
     .what{
+        margin-top: 80px;
         &__items  {
             flex-direction: column;
         }   

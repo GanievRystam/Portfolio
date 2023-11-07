@@ -77,9 +77,18 @@
 }
 @media (max-width: 700px) {
     .infoUser {
+        padding-bottom: 80px;
         &__container {
             flex-direction: column-reverse;
             text-align: center;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .infoUser {
+        &__img {
+            width: 85%;
         }
     }
 }

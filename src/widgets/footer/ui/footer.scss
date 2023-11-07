@@ -33,3 +33,9 @@ footer {
     background-color: #0BCEAF;
     border-radius: 20px;
 }
+
+@media (max-width: 380px) {
+    #footer {
+        padding-top: 25px;
+    }
+}
