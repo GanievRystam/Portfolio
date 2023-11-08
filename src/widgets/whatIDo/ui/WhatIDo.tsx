@@ -12,18 +12,9 @@ export default function WhatIDo () {
             <div className="container">
                 <h2 className="what__header">{t('Что я делаю')}</h2>
                 <div className="what__items">
-                <Ido header="UI Design" text="Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat
-                            volutpat." svg={Img} />
-                <Ido header="Web Development" text="Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat
-                            volutpat." svg={Img2} />
-                <Ido header="App Development" text="Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet dolore magna aliquam erat
-                            volutpat." svg={Img3} />
+                <Ido header={t('Разработка приложений')} text={t('Разработка-пре')} svg={Img} />
+                <Ido header={t('Вёрстка')} text={t('Вёрстка-пре')} svg={Img2} />
+                <Ido header={t('Тестирование')} text={t('Тестирование-пре')} svg={Img3} />
                 </div>
             </div>
         </section>

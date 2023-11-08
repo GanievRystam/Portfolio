@@ -12,18 +12,16 @@ export default function Skills () {
                     <div className="skills__tech skills__wrap">
                         <h2 className="skills__header what__header">{t('Технические навыки')}</h2>
                         <Skill value={86} head="Javascript"/>
-                        <Skill value={3} head="Java"/>
-                        <Skill value={1} head="Python"/>
-                        <Skill value={9} head="PHP"/>
+                        <Skill value={59} head="Typescript"/>
                         <Skill value={50} head="React"/>
+                        <Skill value={10} head="PHP"/>
                     </div>
                     <div className="skills__prof">
                         <h2 className="skills__header what__header">{t('Профессиональные навыки')}</h2>
                         <div className="skills__prof--wrap">
-                            <ProfSkill header="Communication" value={98}/>
-                            <ProfSkill header="Team Work" value={8}/>
-                            <ProfSkill header="Creativity" value={68}/>
-                            <ProfSkill header="Project Management" value={28}/>
+                            <ProfSkill header={t('Коммуникация')} value={98}/>
+                            <ProfSkill header={t('Работа в комманде')} value={82}/>
+                            <ProfSkill header={t('Креатив')} value={69}/>
                         </div>
                         
                     </div>

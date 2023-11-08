@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 export default function Portfolio () {
     const {t} = useTranslation();
     const [category, setCategory] = useState('all');
-    const allWorks:any = {all:[{src:'assets/g8.png.png', href:'https://google.com'}, {src:'assets/g8.png.png', href:'https://google.com'}, {src:'assets/g2.png.png', href:'https://google.com'},{src:'assets/g1.jpg.png', href:'https://google.com'}], web:[{src:'assets/g1.jpg.png', href:'https://google.com'}],react:[{src:'assets/g8.png.png', href:'https://google.com'}],js:[{src:'assets/g2.png.png', href:'https://google.com'}]};
+    const allWorks:any = {all:[{src:'assets/port-one.PNG', href:'https://ganievrystam.github.io/artificium'}, {src:'assets/port-two.png', href:'https://ganievrystam.github.io/labsales/'}, {src:'assets/port-tree.png', href:'https://ganievrystam.github.io/NFT_React/'}], react:[{src:'assets/port-tree.png', href:'https://ganievrystam.github.io/NFT_React/'},{src:'assets/port-one.PNG', href:'https://ganievrystam.github.io/artificium'}],js:[{src:'assets/port-two.png', href:'https://ganievrystam.github.io/labsales/'}]};
     function switchCategory (e:any) {
         document.querySelector('.nav__item--active').classList.remove('nav__item--active');
         const category = e.target.getAttribute('data-role');
@@ -20,9 +20,6 @@ export default function Portfolio () {
                     <ul className="nav__items">
                         <li className="nav__item nav__item--active" data-role="all" onClick={(e) => switchCategory(e)}>
                             All categories
-                        </li>
-                        <li className="nav__item" data-role="web" onClick={(e) => switchCategory(e)}>
-                            Web Design
                         </li>
                         <li className="nav__item" data-role="react" onClick={(e) => switchCategory(e)}>
                             React

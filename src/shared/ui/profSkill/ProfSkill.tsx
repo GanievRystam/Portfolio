@@ -11,7 +11,7 @@ export default function ProfSkill ({header, value}: ProfSkillProps) {
         <div className="prof">
             <div className="prof-skill">
             <svg >
-                    <path fill="none"
+                    <path className="skill-border" fill="none"
                         stroke-linecap="round"
                         stroke-width="5"
                         stroke="rgba(0, 0, 0, 0.5)"
@@ -25,7 +25,6 @@ export default function ProfSkill ({header, value}: ProfSkillProps) {
                         stroke-dasharray="35"
                         d="M80 10 a 60 60 0 0 1 0 120 a 40 40 0 0 1 0 -120"
                     >
-                        {/* <animate attributeName="stroke-dasharray" from="0,251.2" to="251.2,0" dur="5s"/> */}
                     </path>
                     
                     <text className="prof-skill__count" x="85" y="70" text-anchor="middle" dy="7" font-size="20" font-family="arial">
