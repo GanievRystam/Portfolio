@@ -1,3 +1,18 @@
 {
-    "Резюме": "Resume"
+    "Резюме": "Resume",
+    "Обо мне": "About",
+    "Навыки": "Skills",
+    "Опыт работы": "Experiences",
+    "Портфолио": "Portfolia",
+    "Связаться": "Contact",
+    "Привет я": "Hello I'm",
+    "Ганиев Рустам": "Ganiev Rustam",
+    "Фронтенд Разработчик": "Frontend Developer",
+    "Санкт-Петербург": "Saint-Peterburg",
+    "Что я делаю": "What I do",
+    "Технические навыки": "Technical Skills",
+    "Профессиональные навыки": "Professional Skills",
+    "Последние работы": "Recent works",
+    "Заинтересованы в работе?":"Interested to Work?",
+    "Избранные проекты":"Featured Projects"
 }

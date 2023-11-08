@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import './portfolio.scss'
+import { useTranslation } from "react-i18next";
 
 export default function Portfolio () {
+    const {t} = useTranslation();
     const [category, setCategory] = useState('all');
     const allWorks:any = {all:[{src:'assets/g8.png.png', href:'https://google.com'}, {src:'assets/g8.png.png', href:'https://google.com'}, {src:'assets/g2.png.png', href:'https://google.com'},{src:'assets/g1.jpg.png', href:'https://google.com'}], web:[{src:'assets/g1.jpg.png', href:'https://google.com'}],react:[{src:'assets/g8.png.png', href:'https://google.com'}],js:[{src:'assets/g2.png.png', href:'https://google.com'}]};
     function switchCategory (e:any) {
@@ -13,7 +15,7 @@ export default function Portfolio () {
     return(
         <section id="portfolio">
             <div className="container">
-                <h2 className="what__header">Recent Portfolio</h2>
+                <h2 className="what__header">{t('Последние работы')}</h2>
                 <nav className="nav">
                     <ul className="nav__items">
                         <li className="nav__item nav__item--active" data-role="all" onClick={(e) => switchCategory(e)}>

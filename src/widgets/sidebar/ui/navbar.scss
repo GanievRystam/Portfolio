@@ -9,6 +9,12 @@
     }
     &-item{
         list-style: none;
+        &__switch {
+            font-style: italic;
+            cursor: pointer;
+            display: block;
+            margin-top: 7px;
+        }
         &__link {
             text-decoration: none;
             color: #000;
@@ -63,13 +69,20 @@
     cursor: pointer;
     border: 1px solid rgba(#000000, .4);
 }
-@media (max-width: 585px) {
+@media (max-width: 840px) {
+    .navbar-item {
+        &__link {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 780px) {
     .navbar {
         flex-direction: column;
         padding-top: 25px;
     }
 }
-@media (max-width: 455px) {
+@media (max-width: 690px) {
     .navbar {
         &__items{
             flex-direction: column;
@@ -89,5 +102,9 @@
                 top: 35px;
             }
         }
+    }
+    .btn-switchLng {
+        width: fit-content;
+        margin: 0 auto;
     }
 }

@@ -6,11 +6,13 @@ import './featured.scss'
 import SwipImg from 'shared/assets/c2f211abb729ee9336bd706c075c32a3.png'
 import HeaderLogo from 'shared/assets/AdobeStock_107797389-2560x1200.jpg'
 import { Navigation } from 'swiper/modules';
+import { useTranslation } from "react-i18next";
 export default function Featured () {
+    const {t} = useTranslation();
     return(
-        <section className="featured" style={{backgroundImage:`url(${HeaderLogo})`}}>
+        <section className="featured" >
             <div className="container">
-                <h2 className="what__header featured__header">Featured Projects</h2>
+                <h2 className="what__header featured__header">{t('Избранные проекты')}</h2>
                 <Swiper
                       modules={[Navigation]}
                       spaceBetween={50}
