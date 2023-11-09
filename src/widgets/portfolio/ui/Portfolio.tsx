@@ -32,7 +32,7 @@ export default function Portfolio () {
                 <div className="portfolio">
                     <div className="portfolio__work">
                     {allWorks[category].map( (work:any, index: number)=> {
-                            return <a key={index} href={work.href}> <img className="portfolio__img" src={work.src} alt="" /></a>
+                            return <a className="portfolio__wrap" key={index} href={work.href}> <img className="portfolio__img" src={work.src} alt="" /></a>
                         })}
                     </div>
                 </div>

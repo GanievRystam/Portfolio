@@ -43,10 +43,14 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    &__wrap {
+        height: 230px;
+        overflow-y: hidden;
+        border-radius: 10px;
+    }
     &__img {
         cursor: pointer;
         width: 100%;
         max-width: 350px;
-        border-radius: 10px;
     }
 }

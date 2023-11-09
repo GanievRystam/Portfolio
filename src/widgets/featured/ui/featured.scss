@@ -1,4 +1,7 @@
 .swiper {
+    &__description {
+            width: 100%;
+        }
     &-slide {
         display: flex;
         justify-content: space-between;
@@ -109,9 +112,6 @@
         }
         &-slide {
             flex-direction: column;
-        }
-        &__description {
-            width: 100%;
         }
         &__text {
             max-width: max-content;

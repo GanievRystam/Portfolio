@@ -25,14 +25,10 @@ export default function Featured () {
                     <SwiperSlide>
                         <img className="swiper__img" src={SwipImg} alt="" />
                         <div className="swiper__description">
-                            <h3 className="swiper__header-green">{t('Фронтенд разработчик')}</h3>
+                            <h3 className="swiper__header-green">{t('Фронтенд разработка')}</h3>
                             <h2 className="swiper__header">Artificium</h2>
                             <h4 className="swiper__mini-header">{t('Разработка')}</h4>
-                            <p className="swiper__text">Stamp is a clean and elegant Multipurpose Landing Page Template. It
-                                will fit perfectly for Startup, Web App or any type of Web Services. It
-                                has 4 background styles with 6 homepage styles. 6 pre-defined color
-                                scheme. All variations are organized separately so you can use /
-                                customize the template very easily.
+                            <p className="swiper__text">{t('фронт-пре-один')}
                             </p>
                             <a href="https://ganievrystam.github.io/artificium" className="swiper__link">{t('Посмотреть детали')}</a>
 
@@ -42,14 +38,10 @@ export default function Featured () {
                     <SwiperSlide>
                     <img className="swiper__img" src={SwipImgTwo} alt="" />
                         <div className="swiper__description">
-                            <h3 className="swiper__header-green">{t('Фронтенд разработчик')}</h3>
+                            <h3 className="swiper__header-green">{t('Фронтенд разработка')}</h3>
                             <h2 className="swiper__header">Строитель</h2>
                             <h4 className="swiper__mini-header">{t('Разработка')}</h4>
-                            <p className="swiper__text">Stamp is a clean and elegant Multipurpose Landing Page Template. It
-                                will fit perfectly for Startup, Web App or any type of Web Services. It
-                                has 4 background styles with 6 homepage styles. 6 pre-defined color
-                                scheme. All variations are organized separately so you can use /
-                                customize the template very easily.
+                            <p className="swiper__text">{t('фронт-пре-два')}
                             </p>
                             <a href="https://ganievrystam.github.io/labsales/" className="swiper__link">{t('Посмотреть детали')}</a>
 
@@ -59,14 +51,10 @@ export default function Featured () {
                     <SwiperSlide>
                     <img className="swiper__img" src={SwipImgTree} alt="" />
                         <div className="swiper__description">
-                            <h3 className="swiper__header-green">{t('Фронтенд разработчик')}</h3>
+                            <h3 className="swiper__header-green">{t('Фронтенд разработка')}</h3>
                             <h2 className="swiper__header">NFC</h2>
                             <h4 className="swiper__mini-header">{t('Разработка')}</h4>
-                            <p className="swiper__text">Stamp is a clean and elegant Multipurpose Landing Page Template. It
-                                will fit perfectly for Startup, Web App or any type of Web Services. It
-                                has 4 background styles with 6 homepage styles. 6 pre-defined color
-                                scheme. All variations are organized separately so you can use /
-                                customize the template very easily.
+                            <p className="swiper__text">{t('фронт-пре-три')}
                             </p>
                             <a href="https://ganievrystam.github.io/NFT_React/" className="swiper__link">{t('Посмотреть детали')}</a>
 

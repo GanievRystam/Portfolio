@@ -34,5 +34,9 @@
     "Разрабатываю Бэкенд на Node js": "Developing a Backend on Node js",
     "по настоящее время": "now",
     "Посмотреть детали": "View Details",
-    "Разработка":"Develop"
+    "Разработка":"Develop",
+    "Фронтенд разработка": "Frontend develop",
+    "фронт-пре-один": "Online chat using web-socket technology. Working chat with the ability to create separate groups, chats, etc.",
+    "фронт-пре-два": "Landing page of a construction company with adaptive layout. Using the Yandex Maps api",
+    "фронт-пре-три": "Simple NFC landing on React"
 }
