@@ -58,25 +58,49 @@
         }
     }
     &__link {
-        display: block;
-        max-width: 200px;
-        box-sizing: border-box;
-        color: #FFF;
-        text-align: center;
-        font-size: 16px;
-        text-decoration: none;
-        font-weight: 700;
         line-height: 24px;
-        border-radius: 20px;
-        opacity: 0.9;
-        background: #0BCEAF;
-        padding: 9px 16px 9px 16px;
         margin-bottom: 30px;
     }
 }
 .featured {
     background: url("./AdobeStock_107797389-2560x1200.jpg") no-repeat center center;
     padding: 90px 0;
+}
+.btn {
+    border-radius: 20px;
+    opacity: 0.9;
+    background: transparent;
+    padding: 9px 16px 9px 16px;
+    color: #000;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    max-width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    &::after {
+        content: '';
+        overflow: hidden;
+        background-color: #0BCEAF;
+        height: 42px;
+        width: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width .3s;
+        z-index: -1;
+    }
+    &:hover {
+        border: 1px solid transparent;
+    }
+    &:hover::after {
+        width: 100%;
+    }
 }
 @media (max-width: 1080px) {
     .swiper {

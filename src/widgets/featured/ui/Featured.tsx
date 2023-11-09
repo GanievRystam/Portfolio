@@ -30,7 +30,7 @@ export default function Featured () {
                             <h4 className="swiper__mini-header">{t('Разработка')}</h4>
                             <p className="swiper__text">{t('фронт-пре-один')}
                             </p>
-                            <a href="https://ganievrystam.github.io/artificium" className="swiper__link">{t('Посмотреть детали')}</a>
+                            <a href="https://ganievrystam.github.io/artificium" className="btn swiper__link">{t('Посмотреть детали')}</a>
 
                             
                         </div>
@@ -43,7 +43,7 @@ export default function Featured () {
                             <h4 className="swiper__mini-header">{t('Разработка')}</h4>
                             <p className="swiper__text">{t('фронт-пре-два')}
                             </p>
-                            <a href="https://ganievrystam.github.io/labsales/" className="swiper__link">{t('Посмотреть детали')}</a>
+                            <a href="https://ganievrystam.github.io/labsales/" className="btn swiper__link">{t('Посмотреть детали')}</a>
 
                             
                         </div>
@@ -56,7 +56,7 @@ export default function Featured () {
                             <h4 className="swiper__mini-header">{t('Разработка')}</h4>
                             <p className="swiper__text">{t('фронт-пре-три')}
                             </p>
-                            <a href="https://ganievrystam.github.io/NFT_React/" className="swiper__link">{t('Посмотреть детали')}</a>
+                            <a href="https://ganievrystam.github.io/NFT_React/" className="btn swiper__link">{t('Посмотреть детали')}</a>
 
                             
                         </div>

@@ -54,22 +54,26 @@
         margin-right: 15px;
         line-height: 24px;
         position: relative;
+        overflow: hidden;
         cursor: pointer;
 
-        &::after {
+        &::after, &::before {
             content: '';
             width: 0%;
             background-color: rgba(#0BCEAF, 0.8);
             position: absolute;
-            top: 0px;
+            top: -3px;
             transition: width 0.5s;
             left: 0;
-            height: 27px;
-            border-radius: 4px;
-            z-index: -1;
+            height: 45px;
+
         }
-        &:hover::after {
-            width: 100%;
+        &::before {
+            left: auto;
+            right: 0;
+        }
+        &:hover::after, &:hover::before {
+            width: 10%;
         }
     }
 }
