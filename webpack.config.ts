@@ -71,7 +71,7 @@ const config: webpack.Configuration = {
     clean: true
   },
   plugins: [
-    new HtmlWebpackPlugin({template: path.resolve(__dirname, 'public', 'index.html'), favicon: "./src/shared/assets/favicon.png"}),
+    new HtmlWebpackPlugin({template: path.resolve(__dirname, 'public', 'index.html'), favicon: "./src/shared/assets/favicon.png", title: "Portfolio"}),
     new webpack.ProgressPlugin(),
     new MiniCssExtractPlugin({
       linkType: "text/css",
