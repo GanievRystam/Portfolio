@@ -1,0 +1,145 @@
+.about-me__header {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.about-me__btn {
+  border-radius: 20px;
+  opacity: 0.9;
+  background: #0BCEAF;
+  padding: 9px 31px 9px 32.96px;
+  color: #FFF;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.about-me__text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  max-width: 490px;
+  margin-bottom: 30px;
+}
+
+.about {
+  margin-top: 100px;
+}
+.about__img {
+  width: 100%;
+  max-width: 540px;
+}
+.about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.skills {
+  max-width: 490px;
+  margin-bottom: 44px;
+}
+.skills__skill {
+  display: inline-block;
+  color: #000;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid rgba(11, 206, 175, 0.8);
+  padding: 1px 9.95px 1px 11px;
+  margin-right: 15px;
+  line-height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+.skills__skill::after {
+  content: "";
+  width: 15px;
+  border-radius: 50%;
+  height: 15px;
+  position: absolute;
+  top: -13px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  left: -3px;
+  background-color: transparent;
+  overflow: hidden;
+}
+.skills__skill:hover::after {
+  background-color: white;
+  -webkit-animation: btnAbout 0.5s infinite;
+          animation: btnAbout 0.5s infinite;
+}
+
+@-webkit-keyframes btnAbout {
+  0% {
+    left: -3px;
+    top: -13px;
+  }
+  25% {
+    top: -13px;
+    left: 85%;
+  }
+  50% {
+    left: 100%;
+    top: 85%;
+  }
+  75% {
+    left: -3px;
+    top: 100%;
+  }
+  100% {
+    left: -3px;
+    top: -13px;
+  }
+}
+
+@keyframes btnAbout {
+  0% {
+    left: -3px;
+    top: -13px;
+  }
+  25% {
+    top: -13px;
+    left: 85%;
+  }
+  50% {
+    left: 100%;
+    top: 85%;
+  }
+  75% {
+    left: -3px;
+    top: 100%;
+  }
+  100% {
+    left: -3px;
+    top: -13px;
+  }
+}
+@media (max-width: 992px) {
+  .about__img {
+    max-width: 485px;
+  }
+}
+@media (max-width: 864px) {
+  .about-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-me {
+    text-align: center;
+  }
+}

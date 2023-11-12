@@ -54,27 +54,48 @@
         margin-right: 15px;
         line-height: 24px;
         position: relative;
-        overflow: hidden;
         cursor: pointer;
 
-        &::after, &::before {
+        &::after{
             content: '';
-            width: 0%;
-            background-color: rgba(#0BCEAF, 0.8);
+            width: 15px;
+            border-radius: 50%;
+            height: 15px;
             position: absolute;
-            top: -3px;
-            transition: width 0.5s;
-            left: 0;
-            height: 45px;
+            top: -13px;
+            transition: all 0.5s;
+            left: -3px;
+            background-color: transparent;
+            overflow: hidden;
+        }
+        &:hover::after {
+            background-color: white;
+            animation: btnAbout .5s infinite;
 
         }
-        &::before {
-            left: auto;
-            right: 0;
-        }
-        &:hover::after, &:hover::before {
-            width: 10%;
-        }
+    }
+}
+
+@keyframes btnAbout {
+    0% {
+        left: -3px;
+        top: -13px;
+    }
+    25% {
+        top: -13px;
+        left: 85%;
+    }
+    50% {
+        left: 100%;
+        top: 85%;
+    }
+    75% {
+        left: -3px;
+        top: 100%;
+    }
+    100% {
+        left: -3px;
+        top: -13px;
     }
 }
 @media (max-width: 992px) {

@@ -1,9 +1,11 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const mode = process.env.mode === 'production' ? process.env.mode : 'development'; 
+console.log(mode);
 const config: webpack.Configuration = {
-  mode: "development",
+  mode: mode,
   entry:  path.resolve(__dirname, 'src', 'index.tsx'),
   module: {
     rules: [
@@ -37,12 +39,14 @@ const config: webpack.Configuration = {
       {
         test: /\.(css|sass|scss)$/,
         use: [
+          
           {
-            loader: 'style-loader'
+            loader: mode === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader
           },
           {
             loader: 'css-loader'
           },
+          { loader: "postcss-loader", options: { sourceMap: true } },
           {
             loader: 'sass-loader'
           }
@@ -67,8 +71,11 @@ const config: webpack.Configuration = {
     clean: true
   },
   plugins: [
-    new HtmlWebpackPlugin({template: path.resolve(__dirname, 'public', 'index.html')}),
-    new webpack.ProgressPlugin()
+    new HtmlWebpackPlugin({template: path.resolve(__dirname, 'public', 'index.html'), favicon: "./src/shared/assets/favicon.png"}),
+    new webpack.ProgressPlugin(),
+    new MiniCssExtractPlugin({
+      linkType: "text/css",
+    }),
   ],
 };
 

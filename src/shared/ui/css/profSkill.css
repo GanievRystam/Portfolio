@@ -1,0 +1,42 @@
+.prof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.prof-skill {
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.prof-skill svg {
+  width: 160px;
+}
+.prof-skill__count {
+  opacity: 0.8;
+  color: #000;
+  font-family: Cinzel, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 16px;
+}
+.prof-header {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+}
+
+@-webkit-keyframes profRotate {}
+
+@keyframes profRotate {}
