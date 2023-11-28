@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 export default function Portfolio () {
     const {t} = useTranslation();
     const [category, setCategory] = useState('all');
-    const allWorks:any = {all:[{src:'src/shared/assets/port-one.png', href:'https://ganievrystam.github.io/artificium'}, {src:'src/shared/assets/port-two.png', href:'https://ganievrystam.github.io/labsales/'}, {src:'src/shared/assets/port-tree.png', href:'https://ganievrystam.github.io/NFT_React/'}], react:[{src:'src/shared/assets/port-tree.png', href:'https://ganievrystam.github.io/NFT_React/'},{src:'src/shared/assets/port-one.png', href:'https://ganievrystam.github.io/artificium'}],js:[{src:'src/shared/assets/port-two.png', href:'https://ganievrystam.github.io/labsales/'}]};
+    const allWorks:any = {all:[{src:'src/shared/assets/port-one.png', href:'https://ganievrystam.github.io/artificium'}, {src:'src/shared/assets/port-four.png', href:'https://ganievrystam.github.io/Chess/'}, {src:'src/shared/assets/port-two.png', href:'https://ganievrystam.github.io/labsales/'}, {src:'src/shared/assets/port-tree.png', href:'https://ganievrystam.github.io/NFT_React/'}], react:[{src:'src/shared/assets/port-tree.png', href:'https://ganievrystam.github.io/NFT_React/'},{src:'src/shared/assets/port-four.png', href:'https://ganievrystam.github.io/Chess/'},{src:'src/shared/assets/port-one.png', href:'https://ganievrystam.github.io/artificium'}],js:[{src:'src/shared/assets/port-two.png', href:'https://ganievrystam.github.io/labsales/'}]};
     function switchCategory (e:any) {
         document.querySelector('.nav__item--active').classList.remove('nav__item--active');
         const category = e.target.getAttribute('data-role');
